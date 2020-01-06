@@ -1,32 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+   <router-view></router-view>
+      <van-tabbar route active-color="#00b894">
+          <van-tabbar-item replace to="/home"><p class="iconfont">&#xe68e;</p>精选</van-tabbar-item>
+          <van-tabbar-item replace to="/sort"><p class="iconfont">&#xe502;</p>分类</van-tabbar-item>
+          <van-tabbar-item replace to="/book"><p class="iconfont">&#xe654;</p>小萌书</van-tabbar-item>
+          <van-tabbar-item replace to="/cart"><p class="iconfont">&#xe501;</p>购物车</van-tabbar-item>
+          <van-tabbar-item replace to="/user"><p class="iconfont">&#xe650;</p>我的</van-tabbar-item>
+      </van-tabbar>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+  export default {
+    name: 'App'
   }
-}
+</script>
+<style lang="less" scoped>
+    @import "./assets/iconfont/iconfont.css";
+    p.iconfont{
+        text-align: center;
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
 </style>
