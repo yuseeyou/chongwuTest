@@ -13,6 +13,13 @@
       "unicode_decimal": 58964
     },
     {
+      "icon_id": "4148179",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
       "icon_id": "7448132",
       "name": "我 的",
       "font_class": "wode",
@@ -39,6 +46,13 @@
       "font_class": "wsdzb_zbgzt_xxzx_newpxb_type",
       "unicode": "e502",
       "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "12679707",
+      "name": "消 息",
+      "font_class": "xiaoxi",
+      "unicode": "e607",
+      "unicode_decimal": 58887
     }
   ]
 }

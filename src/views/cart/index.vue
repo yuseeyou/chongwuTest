@@ -1,12 +1,17 @@
 <template>
     <div class="cart-contain">
-        <p>cart</p>
+        <tar-bar></tar-bar>
     </div>
 </template>
 
 <script>
+    import TarBar from "@/components/TarBar"
+
     export default {
-        name: "index"
+        name: "index",
+        components:{
+            TarBar
+        }
     }
 </script>
 
