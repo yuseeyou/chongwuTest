@@ -10,6 +10,7 @@
       </div>
     </div>
     <recommend />
+    <recent-search />
     <tar-bar />
   </div>
 </template>
@@ -17,9 +18,11 @@
 <script>
 import TarBar from "@/components/TarBar";
 import Recommend from "./recommend";
+import RecentSearch from "./recentSearch";
 export default {
   name: "index",
   components: {
+    RecentSearch,
     Recommend,
     TarBar
   },
@@ -28,9 +31,7 @@ export default {
       searchValue: ""
     };
   },
-  mounted() {
-    console.log("ok");
-  },
+  mounted() {},
   methods: {
     backTo() {
       this.$router.back();
@@ -41,7 +42,10 @@ export default {
 
 <style scoped lang="less">
 .search-main-contain {
+  height: 100vh;
+  background-color: #f3f4f5;
   .search-top {
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;

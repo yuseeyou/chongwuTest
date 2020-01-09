@@ -10,73 +10,90 @@
         />
       </van-tabs>
     </div>
-    <swipe :images="images" />
+    <swipe :images="images" class="main-swipe" />
+    <Meuns />
+    <new-year />
+    <new-user />
+    <recommend :url="require('@/assets/recommend/store.gif')">
+      <div class="store">
+        <div class="store-left">
+          <a href=""><img src="@/assets/recommend/left1.png" alt=""/></a>
+          <a href=""><img src="@/assets/recommend/left2.png" alt=""/></a>
+        </div>
+        <div class="store-right">
+          <a href=""><img src="@/assets/recommend/right1.png" alt=""/></a>
+          <a href=""><img src="@/assets/recommend/right2.png" alt=""/></a>
+        </div>
+      </div>
+    </recommend>
+    <recommend :url="require('@/assets/recommend/hot.gif')">
+      <div class="hot">
+        <swipe-local :images="hotImages" />
+      </div>
+    </recommend>
+    <recommend :url="require('@/assets/recommend/new.gif')">
+      <div class="hot">
+        <swipe-local :images="newImages" />
+      </div>
+    </recommend>
+    <goods />
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>hello</p>
     <tar-bar />
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
   </div>
 </template>
 
 <script>
 import TarBar from "@/components/TarBar";
 import Swipe from "@/components/Swipe";
+import SwipeLocal from "@/components/SwipeLocal";
+import Meuns from "./meuns";
 import Search from "./serach";
-import { HomeMenus, swipeImages } from "@/constants/index";
+import NewYear from "./newYear";
+import NewUser from "./newUser";
+import Recommend from "./recommend";
+import Goods from "@/components/goods";
+import {
+  HomeMenus,
+  swipeImages,
+  hotImages,
+  newImages
+} from "@/constants/index";
 
 export default {
   name: "home",
   components: {
     Swipe,
     TarBar,
-    Search
+    Search,
+    Meuns,
+    NewYear,
+    NewUser,
+    Recommend,
+    SwipeLocal,
+    Goods
   },
   data() {
     return {
@@ -84,7 +101,9 @@ export default {
       images: swipeImages,
       menus: HomeMenus,
       topStyle1: true, // 顶部两种样式之一
-      topStyle2: false // 顶部两种样式之一
+      topStyle2: false, // 顶部两种样式之一
+      hotImages: hotImages,
+      newImages: newImages
     };
   },
   mounted() {
@@ -111,6 +130,7 @@ export default {
 
 <style lang="less">
 .home-contain {
+  // 公共swipe样式
   .swipe-contain {
     width: 100%;
     .van-swipe-item {
@@ -119,6 +139,13 @@ export default {
       }
     }
   }
+  // 首页主swipe样式
+  .main-swipe {
+    .van-swipe__indicators {
+      bottom: 35px;
+    }
+  }
+
   .top-contain {
     padding-top: 25px;
     position: fixed;
@@ -151,6 +178,18 @@ export default {
       .van-tab__text {
         color: #000;
       }
+    }
+  }
+  .store {
+    a,
+    img {
+      display: flex;
+      width: 100%;
+    }
+    display: flex;
+    .store-left,
+    .store-right {
+      flex: 1;
     }
   }
 }

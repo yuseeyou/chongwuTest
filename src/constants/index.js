@@ -16,3 +16,15 @@ export const swipeImages = [
   "https://img2.epetbar.com/2020-01/03/15/e89863b1e34b65fdf6a717ab72726b1c.png?x-oss-process=style/water",
   "https://img2.epetbar.com/nowater/2020-01/05/23/c2d8c0965beb733256040fa24fd990ea.jpg?x-oss-process=style/water"
 ];
+
+export const hotImages = [
+  { url: "", src: require("@/assets/recommend/hot-swipe1.png") },
+  { url: "", src: require("@/assets/recommend/hot-swipe2.png") },
+  { url: "", src: require("@/assets/recommend/hot-swipe3.png") }
+];
+
+export const newImages = [
+  { url: "", src: require("@/assets/recommend/new-swipe1.png") },
+  { url: "", src: require("@/assets/recommend/new-swipe2.png") },
+  { url: "", src: require("@/assets/recommend/new-swipe3.png") }
+];

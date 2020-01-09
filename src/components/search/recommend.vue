@@ -42,7 +42,6 @@ export default {
   }
   .recommend-content {
     padding: 12px 23px;
-    background-color: #f3f4f5;
     display: flex;
     flex-wrap: wrap;
     a {
