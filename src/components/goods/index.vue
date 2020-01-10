@@ -4,7 +4,7 @@
       <p>猜你喜欢</p>
     </div>
     <van-grid :column-num="2" :border="false">
-      <van-grid-item>
+      <van-grid-item v-for="item in 6">
         <van-image
           src="https://img1.epetbar.com/2016-09/23/14/18681c80864aca43b1aa6389f25b1efc.jpg?x-oss-process=style/fill&$1=200&$2=200"
         />
@@ -15,26 +15,6 @@
           <div class="price">$22.5</div>
           <div class="cart">span</div>
         </div>
-      </van-grid-item>
-      <van-grid-item>
-        <van-image
-          src="https://img1.epetbar.com/2018-08/02/15/e53a3f08d381825434957bcc166971a9.jpg?x-oss-process=style/fill&$1=200&$2=200"
-        />
-      </van-grid-item>
-      <van-grid-item>
-        <van-image
-          src="https://img1.epetbar.com/common/upload/commonfile/2019/09/25/140249_382166.jpg?x-oss-process=style/fill&$1=200&$2=200"
-        />
-      </van-grid-item>
-      <van-grid-item>
-        <van-image
-          src="https://img1.epetbar.com/2016-06/17/16/73af48e51f9fc8224871bcbd439861c3.jpg?x-oss-process=style/fill&$1=200&$2=200"
-        />
-      </van-grid-item>
-      <van-grid-item>
-        <van-image
-          src="https://img1.epetbar.com/2018-08/02/15/e53a3f08d381825434957bcc166971a9.jpg?x-oss-process=style/fill&$1=200&$2=200"
-        />
       </van-grid-item>
     </van-grid>
   </div>

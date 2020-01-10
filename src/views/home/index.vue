@@ -37,30 +37,7 @@
       </div>
     </recommend>
     <goods />
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>hello</p>
+    <under-line/>
     <tar-bar />
   </div>
 </template>
@@ -75,6 +52,7 @@ import NewYear from "./newYear";
 import NewUser from "./newUser";
 import Recommend from "./recommend";
 import Goods from "@/components/goods";
+import UnderLine from '@/components/underLine'
 import {
   HomeMenus,
   swipeImages,
@@ -93,7 +71,8 @@ export default {
     NewUser,
     Recommend,
     SwipeLocal,
-    Goods
+    Goods,
+    UnderLine
   },
   data() {
     return {
@@ -130,6 +109,7 @@ export default {
 
 <style lang="less">
 .home-contain {
+  padding-bottom: 53px;
   // 公共swipe样式
   .swipe-contain {
     width: 100%;
