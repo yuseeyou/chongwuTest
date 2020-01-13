@@ -13,7 +13,9 @@
         </div>
         <div class="good-bottom">
           <div class="price">$22.5</div>
-          <div class="cart">span</div>
+          <div class="cart">
+            <span class="iconfont">&#xe628;</span>
+          </div>
         </div>
       </van-grid-item>
     </van-grid>
@@ -70,10 +72,17 @@ export default {
           padding: 0 10px;
           display: flex;
           justify-content: space-between;
+          align-items: center;
           .price {
             color: #ff5757;
             font-size: 14px;
             font-weight: 700;
+          }
+          .cart {
+            span {
+              font-size: 20px;
+              color: #00b894;
+            }
           }
         }
       }

@@ -7,6 +7,7 @@ import Cart from "@/views/cart/index";
 import User from "@/views/user/index";
 import Error from "@/views/404";
 import Search from "@/components/search/index";
+import Setting from "@/views/user/setting";
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     path: "/user",
     name: "user",
     component: User
+  },
+  {
+    path: "/user/setting",
+    name: "setting",
+    component: Setting
   },
   {
     path: "/book",

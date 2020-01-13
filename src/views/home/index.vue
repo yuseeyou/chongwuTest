@@ -37,7 +37,7 @@
       </div>
     </recommend>
     <goods />
-    <under-line/>
+    <under-line />
     <tar-bar />
   </div>
 </template>
@@ -52,7 +52,7 @@ import NewYear from "./newYear";
 import NewUser from "./newUser";
 import Recommend from "./recommend";
 import Goods from "@/components/goods";
-import UnderLine from '@/components/underLine'
+import UnderLine from "@/components/underLine";
 import {
   HomeMenus,
   swipeImages,

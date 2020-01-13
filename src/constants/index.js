@@ -29,15 +29,15 @@ export const newImages = [
   { url: "", src: require("@/assets/recommend/new-swipe3.png") }
 ];
 
-export const sortItem=[
-  { text: '为你推荐' },
-  { text: '主粮' },
-  { text: '零食' },
-  { text: '玩具' },
-  { text: '清洁' },
-  { text: '保健' },
-  { text: '护理' },
-  { text: '牵引绳' },
-  { text: '洗护用品' },
-  { text: '窝垫' },
-]
+export const sortItem = [
+  { text: "为你推荐" },
+  { text: "主粮" },
+  { text: "零食" },
+  { text: "玩具" },
+  { text: "清洁" },
+  { text: "保健" },
+  { text: "护理" },
+  { text: "牵引绳" },
+  { text: "洗护用品" },
+  { text: "窝垫" }
+];
