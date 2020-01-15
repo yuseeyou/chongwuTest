@@ -8,6 +8,7 @@ import User from "@/views/user/index";
 import Error from "@/views/404";
 import Search from "@/components/search/index";
 import Setting from "@/views/user/setting";
+import Goods from "@/views/goods";
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: "/book",
     name: "book",
     component: Book
+  },
+  {
+    path: "/goods/:id",
+    name: "goods",
+    component: Goods
   },
   {
     path: "/404",

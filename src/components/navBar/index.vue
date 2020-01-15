@@ -5,7 +5,7 @@
         <span class="arrow-span" @click="toBack"></span>
       </div>
       <span class="title">
-        <slot>默认标题 </slot>
+        <slot>默认标题</slot>
       </span>
       <span class="iconfont down" @click="toggleDown">&#xe64b;</span>
     </div>
@@ -59,6 +59,8 @@ export default {
     },
     toggleDown() {
       this.toggleFlag = !this.toggleFlag;
+      // 提供向父组件的点击菜单展开或者关闭事件
+      this.$emit("toggleChecked", this.toggleFlag);
     }
   }
 };

@@ -34,6 +34,13 @@
       "unicode_decimal": 58920
     },
     {
+      "icon_id": "1579985",
+      "name": "对",
+      "font_class": "dui",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
       "icon_id": "1680337",
       "name": "收获地址管理",
       "font_class": "shouhuodizhiguanli",
@@ -76,6 +83,13 @@
       "unicode_decimal": 58960
     },
     {
+      "icon_id": "7455362",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
       "icon_id": "8235240",
       "name": "功能",
       "font_class": "gongneng",
@@ -116,6 +130,13 @@
       "font_class": "wode1",
       "unicode": "e684",
       "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "11645392",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e614",
+      "unicode_decimal": 58900
     },
     {
       "icon_id": "12679707",

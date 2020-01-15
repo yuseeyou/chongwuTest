@@ -5,18 +5,20 @@
     </div>
     <van-grid :column-num="2" :border="false">
       <van-grid-item v-for="item in 6">
-        <van-image
-          src="https://img1.epetbar.com/2016-09/23/14/18681c80864aca43b1aa6389f25b1efc.jpg?x-oss-process=style/fill&$1=200&$2=200"
-        />
-        <div class="good-title">
-          猫粮骄傲发的按时发货都忘记和那覅点击安分守法阿斯蒂芬
-        </div>
-        <div class="good-bottom">
-          <div class="price">$22.5</div>
-          <div class="cart">
-            <span class="iconfont">&#xe628;</span>
+        <a href="/goods/123">
+          <van-image
+            src="https://img1.epetbar.com/2016-09/23/14/18681c80864aca43b1aa6389f25b1efc.jpg?x-oss-process=style/fill&$1=200&$2=200"
+          />
+          <div class="good-title">
+            猫粮骄傲发的按时发货都忘记和那覅点击安分守法阿斯蒂芬
           </div>
-        </div>
+          <div class="good-bottom">
+            <div class="price">$22.5</div>
+            <div class="cart">
+              <span class="iconfont">&#xe628;</span>
+            </div>
+          </div>
+        </a>
       </van-grid-item>
     </van-grid>
   </div>
