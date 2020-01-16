@@ -9,6 +9,8 @@ import Error from "@/views/404";
 import Search from "@/components/search/index";
 import Setting from "@/views/user/setting";
 import Goods from "@/views/goods";
+import Login from "@/views/login/login";
+import Register from "@/views/login/register";
 
 Vue.use(VueRouter);
 
@@ -59,6 +61,14 @@ const routes = [
   {
     path: "/search",
     component: Search
+  },
+  {
+    path: "/login",
+    component: Login
+  },
+  {
+    path: "/register",
+    component: Register
   },
   {
     path: "*",

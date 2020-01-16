@@ -20,7 +20,7 @@
           </van-card>
         </div>
         <div class="goods-item">
-          <van-checkbox name="a" />
+          <van-checkbox name="b" />
           <van-card
             price="2.00"
             title="商品标题非把开发开放你哈空间分布数据备份和骄傲u看到回复是否把课本上的发给你开发功能丰富的尽快改变环境的发表"

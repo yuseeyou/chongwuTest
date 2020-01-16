@@ -107,9 +107,15 @@ export default {
     // 查看全部评价按钮
     lookAllComment() {
       this.active = 2;
+      this.scrollToTop();
     },
     lookAllDetails() {
       this.active = 1;
+      this.scrollToTop();
+    },
+    // 点击所有评论或者图文详情时跳转到页面顶部
+    scrollToTop() {
+      document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
   }
 };
