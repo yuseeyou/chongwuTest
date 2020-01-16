@@ -38,6 +38,7 @@
     </recommend>
     <goods />
     <under-line />
+    <BackTop />
     <tar-bar />
   </div>
 </template>
@@ -53,6 +54,7 @@ import NewUser from "./newUser";
 import Recommend from "./recommend";
 import Goods from "@/components/goods";
 import UnderLine from "@/components/underLine";
+import BackTop from "@/components/backTop";
 import {
   HomeMenus,
   swipeImages,
@@ -72,7 +74,8 @@ export default {
     Recommend,
     SwipeLocal,
     Goods,
-    UnderLine
+    UnderLine,
+    BackTop
   },
   data() {
     return {
@@ -88,6 +91,9 @@ export default {
   mounted() {
     // 监听首页滚动
     window.addEventListener("scroll", this.windowScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.windowScroll);
   },
   methods: {
     windowScroll() {

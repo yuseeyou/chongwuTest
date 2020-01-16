@@ -76,6 +76,20 @@
       "unicode_decimal": 58901
     },
     {
+      "icon_id": "6235104",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "6390053",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu1",
+      "unicode": "eaa6",
+      "unicode_decimal": 60070
+    },
+    {
       "icon_id": "7448132",
       "name": "我 的",
       "font_class": "wode",
